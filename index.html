@@ -1,0 +1,92 @@
+
+<html>
+  <head>
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Page</h1>
+    <blockquote ><p id="description">
+      Thank you for taking the time to help us improve the platform.</p>
+    </blockquote>
+    <div >
+      <form id="survey-form" method="post">
+      <table>
+      <tr>
+        <td><label id="name-label">Name</label>
+        <td>:<td><input type="text" id="name" placeholder="enter yourname" required>
+        <td>
+      </tr> 
+     <tr>
+        <td><label id="email-label">Email</label>
+        <td>:<td><input type="email" id="email" placeholder="enter your email" required>
+        <td>
+      </tr>
+        <tr>
+        <td><label id="number-label">Ages (optional)</label>
+        <td>:<td><input type="number" id="number" min="18" max="55" size="100"placeholder="your ages" oninvalid="alert('you must fill ages between 18 and 55');"required>
+        <td>
+        </tr>  
+        <tr>
+        <td><label id="dropdown">Which option best describes your current role?</label>
+        <td>:<td colspan="2">
+          </tr>
+          <tr>
+            <td>
+          <select name="role" id="dropdown">
+            <option disabled selected value="selectrole">select current role</option>
+            <option value="student">Student</option>
+            <option value="fulltiemjob">Full time job</option>
+            <option value="fulltimelearner">Full time learner</option>
+          <option value="prefernottosay">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        <td>
+      </tr>
+        <tr>
+            <td>
+              Would you recommend freeCodeCamp to a friend?
+            <td>
+              :
+            <td>
+              <label><input type="radio" name="recommend" value="definitely" checked>Definitely</label>
+              <label><input type="radio" name="recommend" value="maybe">Maybe</label>
+              <label><input type="radio" name="recommend" value="notsure">Not Sure</label>
+      </tr>
+      <tr>
+        <td colspan="3">
+          What can we improve ?(Check all that apply)
+         <td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <input type="checkbox" name="improvement" value="frontendproject"><label for="frontendproject">Front-end Projects</label>
+          <br>
+          <input type="checkbox" name="improvement" value="backendproject"><label for="backendproject">Back-end Projects</label> 
+          <br>
+          <input type="checkbox" name="improvement" value="datavisualization"><label for="datavisualization">Data Visualization</label>
+          <br>
+          <input type="checkbox" name="improvement" value="challenge"><label for="challenge">Challenges</label>
+          <br>
+          <td>
+          </tr>
+   <tr>
+     <td>
+       Additional message
+     <td>
+     :
+       <td>
+         <textarea cols="50" rows="5" placeholder="type your additional message here" maxlength="300"></textarea>
+         <td>
+          </tr>
+      </table>
+          <br>
+        <div class="buttonpos">
+          <button type="submit" id="submit" onclick="submitedData">Submit</button>     
+          <button type="button" id="reset">Reset</button> 
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
