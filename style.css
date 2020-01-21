@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Solway&display=swap');
+@import
+url('https://fonts.googleapis.com/css?family=Solway&display=swap');
+body{
+  background-color:#33CEF4;
+}
+
+input:focus{
+  border: 0.2em solid;
+  border-color: #21ABAB;
+  background-color:#EB7219;
+  color:white;
+  transition: 0.7s;
+  border-radius:0px;
+}
+
+input{
+  border-radius:5px;
+  border:none;
+  padding:2px;
+}
+#number{
+  width:45%;
+}
+textarea:focus{
+  border-color: #21ABAB;
+  background-color:#EB7219;
+  color:white;
+  transition: 0.7s;
+  border-radius:0px;
+}
+
+textarea{
+  border-radius:5px;
+  border:none;
+  padding:2px;
+}
+#title{
+  color: white;
+  font-family: Solway;
+  text-align:center;
+}
+
+#survey-form{
+  color:white;
+  width:60%;
+  margin: auto;
+  padding: 3em;
+  background-color:#2EA6C4;
+  border-radius: 1em;
+  font-family:nunito;
+}
+
+#description{
+  font-style:italic;
+  text-align:center;
+  color:white;
+}
+
+#submit{
+  //position:relative;
+  left:50%;
+  background-color:#19EB1C;
+  margin-right:2em;
+  border:none;
+  padding:1em;
+  color:white;
+  border-radius:5px;
+}
+
+#submit:hover{
+  background-color:#1EB814;
+}
+
+#reset{
+ // position:relative;
+  left:50%;
+  background-color: #1959EB;
+  margin-left:2em;
+  border:none;
+  padding:1em;
+  color:white;
+  border-radius:5px;
+}
+
+#reset:hover{
+  background-color:#068f94;
+}
+
+.buttonpos{
+  margin:auto;
+  text-align:center;
+}
+
